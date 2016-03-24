@@ -8,7 +8,7 @@ export default function() {
           sender_id: 1,
           receiver_id: 2,
           amount: 75.00,
-          description: 'Estate'
+          description: 'Meat for Sun City'
         }
       }, {
         type: 'transactions',
@@ -17,7 +17,7 @@ export default function() {
           sender_id: 1,
           receiver_id: 3,
           amount: 150.00,
-          description: 'Condo'
+          description: 'Cigarettes and drink'
         }
       }, {
         type: 'transactions',
@@ -26,7 +26,7 @@ export default function() {
           sender_id: 3,
           receiver_id: 2,
           amount: 100.00,
-          description: 'Apartment'
+          description: 'Food from pizza di gio'
         }
       }]
     };
