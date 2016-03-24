@@ -6,6 +6,12 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('transactions');
+  this.route('friends');
+  this.route('parties');
+  this.route('account', function() {
+    this.route('login');
+  });
 });
 
 export default Router;

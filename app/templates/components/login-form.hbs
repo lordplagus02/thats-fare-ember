@@ -1,0 +1,19 @@
+<form class="ui form" {{action "authenticate" on="submit"}}>
+  <div class="field">
+    <label>Username/Email</label>
+      {{input value=username type="text"}}
+  </div>
+
+  <div class="field">
+    <label>Password</label>
+      {{input value=password type="password"}}
+  </div>
+
+  <div class="field">
+    <div class="ui checkbox">
+      {{input checked=rememberMe type="checkbox" tabindex="0"}}
+      <label>Remember me</label>
+    </div>
+  </div>
+  <button class="ui button" type="submit">Submit</button>
+</form>

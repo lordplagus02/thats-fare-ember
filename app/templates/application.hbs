@@ -1,3 +1,36 @@
-<h2 id="title">Welcome to Ember</h2>
+  <div class="ui grid container">
+      <!-- Responsive sidebar menu -->
+      <div class="ui sidebar inverted vertical menu">
+        <a class="item" href="./login.html">
+          <h4 class="ui grey header">John Doe</h4>
+          <p>Sign Out</p>
+        </a>
+        {{#link-to "index" class="active gray item"}}Dashboard{{/link-to}}
+        {{#link-to "transactions" class="item"}}Transactions{{/link-to}}
+        {{#link-to "parties" class="item"}}Parties{{/link-to}}
+        {{#link-to "friends" class="item"}}Friends{{/link-to}}
+      </div>
 
-{{outlet}}
+      <!-- Non-responsive main left menu -->
+      <div class="ui left fixed vertical inverted menu">
+        <a class="item" href="./login.html">
+          <h4 class="ui grey header">John Doe</h4>
+          <p>Sign Out</p>
+        </a>
+        {{#link-to "index" class="active gray item"}}Dashboard{{/link-to}}
+        {{#link-to "transactions" class="item"}}Transactions{{/link-to}}
+        {{#link-to "parties" class="item"}}Parties{{/link-to}}
+        {{#link-to "friends" class="item"}}Friends{{/link-to}}
+
+      <div class="ui main grid">
+      <!-- Responsive top menu -->
+        <div class="ui fixed inverted main menu">
+          <div class="ui container">
+            <a class="launch icon item sidebar-toggle">
+              <i class="sidebar icon"></i>
+            </a>
+          </div>
+        </div>
+     {{outlet}}
+     </div>
+</div>

@@ -1,0 +1,29 @@
+
+<h2 class="ui header">
+  <i class="exchange icon"></i>
+  <div class="content">
+    Transactions
+    <div class="sub header">See your latest transactions</div>
+  </div>
+</h2>
+	<div class="two column row">
+		<div class="eight wide column">
+			<button class="ui primary button">
+			<i class="plus icon"></i>
+			  Add
+			</button>
+			<button class="ui green button">
+			<i class="reply all icon"></i>
+			  Pay back
+			</button>
+		</div>
+	</div>
+	<div class="eight wide column">
+	      <div class="ui segment">
+		    <div class="ui relaxed divided list">
+		      	{{#each model as |transaction|}}
+		  			{{transaction-list t=transaction}}
+				{{/each}}
+		    </div>
+	    </div>
+	</div>
